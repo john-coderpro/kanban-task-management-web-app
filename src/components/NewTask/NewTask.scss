@@ -1,0 +1,35 @@
+.new-task{
+  align-items: flex-start;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--proper-margin);
+  max-width: 480px;
+  padding: 20px;
+  width: 80vw;
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+span[data-testid="task-title-error"] {
+  color: var(--red);
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.title {
+  position: relative;
+  width: 100%;
+  & > input {
+    width: 100%;
+  }
+}
+legend {
+  color: var(--grey-text);
+  margin-bottom: 10px;
+}
+fieldset > * {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+@use '../../mixin' as *;
+
+.button-primary {
+  background-color: var(--main-purple);
+  height: 40px;
+  border-radius: 40px;
+  color: white;
+  &:hover {
+    background-color: var(--main-purple-hover);
+  }
+}
+.button-initial {
+  padding: 5px;
+
+  & > span {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
+.button-destructive {
+  background-color: var(--red);
+  width: 90%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 40px;
+  color: white;
+  &:hover {
+    background-color: var(--red-hover);
+  }
+  @include media(medium) {
+    margin-bottom: 0;
+    width: 190px; 
+    margin-right: 20px;
+  }
+}
+.button-secondary {
+  background-color: var(--secondary-btn-bg-color);
+  width: 90%;
+  height: 40px;
+  border-radius: 40px;
+  color: var(--main-purple);
+  &:hover {
+    background-color: var(--secondary-btn-bg-color-hover);
+  }
+  @include media(medium) {
+    width: 190px;
+  }
+}

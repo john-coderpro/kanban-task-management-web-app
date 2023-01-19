@@ -1,0 +1,21 @@
+.task {
+  width: 280px;
+  min-height: 90px;
+  background-color: var(--task-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 6px rgba(54, 78, 126, 0.101545);
+  span {
+    color: var(--grey-text);
+  }
+  & > .title {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    cursor: pointer;
+    & > .title {
+    color: var(--main-purple)
+  }
+  }
+}

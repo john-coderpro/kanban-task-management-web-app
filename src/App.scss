@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--main-purple);
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  width: 56px;
+  height: 48px;
+  border-radius: 0 24px 24px 0;
+  &:hover {
+    background-color: var(--main-purple-hover);
+  }
+}

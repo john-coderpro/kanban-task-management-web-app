@@ -1,0 +1,29 @@
+.edit-board {
+  margin-top: var(--proper-margin);
+  padding: 20px;
+  width: 80vw;
+  max-width: 480px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+}
+.title-input {
+  width: 100%;
+  position: relative;
+  & > input {
+    width: 100%;
+  }
+}
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}

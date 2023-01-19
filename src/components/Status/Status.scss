@@ -1,0 +1,66 @@
+.status {
+  width: 100%;
+  border: 1px solid rgba(130, 143, 163, 0.25);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  line-height: 1.1;
+  position: relative;
+  background-color: var(--main-bg);
+
+  & > select {
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    // Additional resets for further consistency
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    // for IE
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::after {
+    content: url('../../assets/icon-chevron-down.svg');
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    top: 7px;
+    right: 20px;
+  }
+}
+select:focus + .focus {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: -1px;
+        bottom: 0;
+        border: 1px solid var(--main-purple);
+        border-radius: inherit;
+       
+        background-color: transparent;
+}
+select > option {
+  font-family: inherit;
+  color: var(--grey-text);
+  background-color: var(--main-bg);
+}

@@ -1,0 +1,39 @@
+.new-board {
+  align-items: flex-start;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--proper-margin);
+  max-width: 480px;
+  padding: 20px;
+  width: 80vw;
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+}
+.title-input {
+  position: relative;
+  width: 100%;
+  & > input {
+    width: 100%;
+  }
+}
+.title {
+  color: var(--text-color);
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+// the followin styles will also apply for the edit board
+// component because it is an element selector, and will
+// thereby be available globally
+span[data-testid="board-name-error"] {
+  color: var(--red);
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}

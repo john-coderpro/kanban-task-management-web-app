@@ -1,0 +1,29 @@
+.edit-tooltip-task, .edit-tooltip-board {
+  position: absolute;
+  background-color: var(--secondary-bg);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+  width: 192px;
+  height: 94px;
+  border-radius: 10px;
+  & > button:first-child {
+    width: 100%;
+    border-radius: 20px;
+    color: var(--grey-text);
+  }
+  & > button:last-child {
+    width: 100%;
+    border-radius: 20px;
+    color: var(--red)
+  }
+}
+.edit-tooltip-task {
+  top: 60px;
+  right: -96px;
+}
+.edit-tooltip-board {
+  top: 90px;
+  right: 30px;
+}

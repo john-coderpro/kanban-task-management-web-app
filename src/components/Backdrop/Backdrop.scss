@@ -1,0 +1,25 @@
+.backdrop {
+  align-items: center;
+  background-color: rgba(0,0,0, .5);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.close-backdrop-btn {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  color: var(--red);
+  border-radius: 10px;
+  padding-left: 5px;
+}

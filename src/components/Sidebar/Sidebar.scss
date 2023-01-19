@@ -1,0 +1,41 @@
+.sidebar {
+  position: fixed;
+  background-color: var(--secondary-bg);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 97px;
+  left: 0;
+  height: calc(100vh - 97px);
+  border-right: 1px solid var(--scrollbar);
+  z-index: 10;
+  color: var(--grey-text);
+}
+
+.all-boards-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+}
+.sidebar > div:last-child {
+  width: 100%;
+  padding: 30px;
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  & > button {
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+}
+

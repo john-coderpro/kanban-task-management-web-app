@@ -1,0 +1,59 @@
+.view-task {
+  // set the relative position for the tooltip
+  // to be position with respect to that
+  position: relative;
+  width: 80vw;
+  margin-top: var(--proper-margin);
+  max-width: 480px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  & > div:first-child {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--text-color);
+    width: 100%;
+  }
+  & > .subtasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    & > span {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    color: var(--grey-text);
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+font-style: normal;
+font-weight: 700;
+font-size: 1.1rem;
+line-height: 23px;
+margin-right: 20px;
+}
+
+.show-edit-task-menu-btn {
+  position: relative;
+  width: 10px;
+  height: 30px;
+  border-radius: 5px;
+  &:focus {
+    background-color: var(--main-bg);
+  }
+  svg {
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 1px;
+  }
+}

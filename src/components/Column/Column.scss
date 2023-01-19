@@ -1,0 +1,39 @@
+.column-empty > ul {
+  border: 1px dashed var(--grey-text);
+  width: 100%;
+  min-height: 50%;
+  border-radius: 5px;
+}
+.column {
+  color: var(--text-color);
+  flex: 0 0 280px;
+  width: 280px;
+  min-height: 800px;
+  margin-right: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  & > div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.dot {
+  display: block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  & + span {
+    text-transform: uppercase;
+    color: var(--grey-text);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+}

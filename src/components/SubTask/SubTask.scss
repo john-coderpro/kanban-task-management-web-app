@@ -1,0 +1,54 @@
+.completed-subtask ,
+.uncompleted-subtask  {
+  background-color: var(--main-bg);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  min-height: 40px;
+  width: 100%;
+  & > span {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  &:hover {
+    background-color: var(--main-purple-hover);
+    cursor: pointer;
+  }
+}
+.completed-subtask {
+  color: var(--completed-subtask-text);
+  text-decoration: line-through;
+  & div {
+    align-items: center;
+    background-color: var(--main-purple);
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    flex: 0 0 16px;
+    height: 16px;
+    justify-content: center;
+    margin-right: 10px;
+    position: relative;
+    width: 16px;
+    svg {
+      left: 2px;
+      position: absolute;
+      top: 4px;
+    }
+  }
+}
+.uncompleted-subtask {
+  color: var(--text-color);
+  & div {
+    align-items: center;
+    background-color: var(--secondary-bg);
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    flex: 0 0 16px;
+    height: 16px;
+    justify-content: center;
+    margin-right: 10px;
+    position: relative;
+    width: 16px;
+  }
+}

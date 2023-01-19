@@ -1,0 +1,107 @@
+@use '../../mixin' as *;
+
+.header {
+  background-color: var(--secondary-bg);
+  display: flex;
+  height: 97px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+.logo {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 100%;
+  padding-left: 30px;
+  width: auto;
+  @include media(medium) {
+    width: 300px;
+  }
+  
+}
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.header-second-part, .header-second-part-empty{
+  align-items: center;
+  display: flex;
+  flex: 1 1 50vw;
+  justify-content: space-between;
+  padding: 0 20px;
+  @include media(medium) {
+    border-bottom: 1px solid var(--scrollbar);
+  }
+}
+.header-second-part-empty {
+  color: var(--grey-text);
+  font-size: 1.5rem;
+  justify-content: center;
+  text-transform: uppercase
+}
+
+.add-task-button {
+    background-color: var(--main-purple);
+    border-radius: 40px;
+    color: white;
+    height: 25px;
+    margin-right: 30px;
+    width: 48px;
+    &:hover, &:disabled {
+      background-color: var(--main-purple-hover);
+    }
+  svg {
+    margin-left: 10px;
+    margin-right: -4px;
+    margin-top: 12px;
+    @include media(medium) {
+      margin: 12px 0 0 0;
+    }
+  }
+  @include media(medium) {
+    height: 48px;
+    width: 164px;
+  }
+}
+.show-edit-menu-btn {
+  border-radius: 5px;
+  height: 30px;
+  position: relative;
+  width: 10px;
+  margin-right: 20px;
+  &:focus {
+    background-color: var(--main-bg);
+  }
+  svg {
+    height: 20px;
+    left: 3px;
+    position: absolute;
+    width: 10px;
+  }
+}
+.header-btns-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.show-main-menu-btn {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 10px;
+  svg {
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
