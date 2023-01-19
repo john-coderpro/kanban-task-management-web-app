@@ -7,14 +7,11 @@ import TasksBoard from './components/TasksBoard/TasksBoard'
 import Header from './components/Header/Header'
 import { AnimatePresence, motion } from 'framer-motion'
 import Backdrop from './components/Backdrop/Backdrop'
-import { BoardsDataContext } from './components/context/BoardsDataContext'
-
 
 
 const App = () => {
   const [backdropData] = useContext(BackdropDataContext)
   const [appState, setAppState] = useContext(AppStateContext)
-  const [boardsData] = useContext(BoardsDataContext)
   const showSidebar = () => {
     setAppState(prevAppState => ({
       ...prevAppState,
@@ -36,10 +33,9 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      const width = window.innerWidth
       setAppState((prevAppState) => ({
         ...prevAppState,
-        isMobileView: (width < 748),
+        isMobileView: window.matchMedia('(max-width: 750px)').matches,
       }))
     })
   }, [])
@@ -49,9 +45,7 @@ const App = () => {
   // to have the background color to be set properly depending of
   // the number of columns
 
-  useEffect(() => {
-    document.body.style = `width: ${(boardsData.current?.columns?.length + 1 )* 290}px`
-  },[boardsData])
+
 
   useEffect(() => {
     appState.isDark?document.body.classList = 'dark': document.body.classList = 'light'
@@ -85,7 +79,6 @@ const App = () => {
         )}
       </AnimatePresence>
       <TasksBoard />
-      
       
       <AnimatePresence >
         {backdropData.isDisplayed && <Backdrop/>}

@@ -1,16 +1,16 @@
 .backdrop {
   align-items: center;
-  background-color: rgba(0,0,0, .5);
+  background-color: rgba(0,0,0, .7);
   display: flex;
   height: 100vh;
   justify-content: center;
   left: 0;
-  overflow-y: scroll;
   padding-bottom: 30px;
   position: fixed;
+  overflow: scroll;
   top: 0;
   width: 100vw;
-  z-index: 10;
+  z-index: 20;
 }
 
 .close-backdrop-btn {

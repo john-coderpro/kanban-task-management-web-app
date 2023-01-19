@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 1;
+  z-index: 10;
   svg {
     height: 24px;
     width: 24px;
@@ -19,10 +19,11 @@
   display: flex;
   flex: 0 0 auto;
   height: 100%;
-  padding-left: 30px;
-  width: auto;
+  padding-left: 15px;
+  width: 50px;
   @include media(medium) {
     width: 300px;
+    padding-left: 30px;
   }
   
 }
@@ -35,11 +36,13 @@
 .header-second-part, .header-second-part-empty{
   align-items: center;
   display: flex;
-  flex: 1 1 50vw;
+  flex: 1 0 0;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
   @include media(medium) {
     border-bottom: 1px solid var(--scrollbar);
+    padding: 0 20px;
+    width: calc(100% - 300px);
   }
 }
 .header-second-part-empty {
@@ -96,9 +99,11 @@
 
 .show-main-menu-btn {
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding-left: 10px;
+  @include media(medium) {
+    font-size: 1.5rem;
+  }
   svg {
     margin-left: 5px;
     margin-right: 0;

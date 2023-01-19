@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 .prettierignore
 .vscode/
+# Local Netlify folder
+.netlify

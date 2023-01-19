@@ -7,7 +7,7 @@ export const AppStateProvider = (props) => {
       JSON.parse(localStorage.getItem('appState'))
       ||{
         isDark: window.matchMedia('prefers-color-scheme: dark').matches,
-        isMobileView: window.matchMedia('max-width: 48em').matches,
+        isMobileView: window.matchMedia('(max-width: 800px)').matches,
         sidebarIsVisible: true,
       }
     )

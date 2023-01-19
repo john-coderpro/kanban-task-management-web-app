@@ -40,7 +40,7 @@ const ViewTask = ({ contentInfo }) => {
       scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 300,
+        stiffness: 170,
       },
     },
   }

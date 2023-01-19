@@ -48,7 +48,7 @@ const EditTask = ({ contentInfo }) => {
       scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 300,
+        stiffness: 170,
       },
     },
   }
@@ -211,6 +211,7 @@ const EditTask = ({ contentInfo }) => {
           value={formData.title}
           aria-required={true}
           id="task-title"
+          aria-invalid={!formData.isValid}
         />
         {!formData.isValid && (
           <span data-testid="task-title-error" style={{ color: 'red' }}>

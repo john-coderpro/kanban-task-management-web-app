@@ -20,7 +20,6 @@ module.exports = merge(common, {
       template: './src/index.html',
       hash: true,
       meta: {
-        viewport: 'width=device-width, initial-scale=1.0',
         description: 'task management web app',
         google: 'notranslate',
       },

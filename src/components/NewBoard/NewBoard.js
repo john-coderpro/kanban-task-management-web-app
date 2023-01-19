@@ -69,7 +69,7 @@ const NewBoard = () => {
 
     const matchingExistingBoardName = boardsData.boards.find(board => board.name === formData.name)
     if (matchingExistingBoardName !== undefined) {
-      setFormData(prevState => modifyObject(prevState,undefined, {nameIsValid: false, errorMessage: 'name already used'}))
+      setFormData(prevState => modifyObject(prevState,undefined, {nameIsValid: false, errorMessage: 'used'}))
     }
     if (formData.name === '') {
       setFormData((prevState) =>
@@ -123,7 +123,7 @@ const NewBoard = () => {
       scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 300,
+        stiffness: 170,
       },
     },
   }
@@ -146,7 +146,7 @@ const NewBoard = () => {
           aria-invalid={!formData.nameIsValid}
           id="board-name"
           maxLength={20}
-          placeholder='e.g. Web Design'
+          placeholder={formData.nameIsValid?'e.g. Web Design':''}
         />
         {!formData.nameIsValid && (
           <span data-testid="board-name-error" >

@@ -7,7 +7,7 @@
   justify-content: space-between;
   top: 97px;
   left: 0;
-  height: calc(100vh - 97px);
+  min-height: calc(100vh - 97px);
   border-right: 1px solid var(--scrollbar);
   z-index: 10;
   color: var(--grey-text);

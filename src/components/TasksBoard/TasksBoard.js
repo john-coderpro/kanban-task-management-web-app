@@ -109,19 +109,19 @@ const TasksBoard = () => {
     useSensor(TouchSensor, {
       activationConstraint: {
         delay: 200,
-        tolerance: 10,
+        tolerance: 20,
       },
     }),
     useSensor(MouseSensor, {
       activationConstraint: {
-        delay: 150,
+        delay: 200,
         tolerance: 5,
       },
     }),
     useSensor(KeyboardSensor, {
       coordinateGetter: sortableKeyboardCoordinates,
       activationConstraint: {
-        delay: 250,
+        delay: 200,
         tolerance: 5,
       },
     })

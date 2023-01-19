@@ -14,14 +14,14 @@ const DeletableInput = (
         value={value}
         aria-required={true}
         aria-invalid={!isValid}
-        placeholder={placeholder}
+        placeholder={isValid?placeholder:''}
       />
       {!isValid && <span className={styles.error}>{validationError}</span>}
       <Button
         style={
           !isValid
-            ? { color: 'var(--red)', marginLeft: '1vw', borderRadius:'10px' }
-            : { color: '#828FA3', marginLeft: '1vw', borderRadius:'10px' }
+            ? { color: 'var(--red)', marginLeft: '3px', borderRadius:'10px' }
+            : { color: '#828FA3', marginLeft: '3px', borderRadius:'10px' }
         }
         hasSvg={true}
         hasText={false}

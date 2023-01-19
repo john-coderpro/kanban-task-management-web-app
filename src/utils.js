@@ -116,7 +116,7 @@ const setProperTopMargin = (nodeRef) => {
     document.documentElement.style = '--proper-margin:0px;'
     return
   }
-  document.documentElement.style = `--proper-margin:${Math.ceil((nodeRefRect?.height - viewportHeight)*1.2)}px;`
+  document.documentElement.style = `--proper-margin:${Math.ceil((nodeRefRect?.height - viewportHeight)*1.2 + 200)}px;`
 }
 
 export { 

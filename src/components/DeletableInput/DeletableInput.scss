@@ -7,8 +7,10 @@
 }
 .error {
   position: absolute;
+  font-size: 16px;
+  color: var(--red);
   top: 10px;
   right: 80px;
-  font-size: 5px;
-  color: var(--red)
-}
+ 
+  }
+  

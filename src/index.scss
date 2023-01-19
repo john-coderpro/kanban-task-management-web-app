@@ -22,9 +22,8 @@
 body {
   background-color: var(--main-bg);
   color: var(--text-color);
-  
-  min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
+  overflow: scroll;
   &::-webkit-scrollbar {
     height: 0.4rem;
     width: 0.7rem;

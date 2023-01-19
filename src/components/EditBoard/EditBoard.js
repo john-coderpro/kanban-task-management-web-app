@@ -38,7 +38,7 @@ const EditBoard = ({ contentInfo }) => {
       scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 300,
+        stiffness: 170,
       },
     },
   }
@@ -109,7 +109,7 @@ const EditBoard = ({ contentInfo }) => {
         modifyObject(
           prevState,
           undefined,
-          {nameIsValid: false, errorMessage: 'name already used'}
+          {nameIsValid: false, errorMessage: 'used'}
         )
       )
     }

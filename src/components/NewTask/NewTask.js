@@ -54,7 +54,7 @@ const NewTask = () => {
       scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 300,
+        stiffness: 170,
       },
     },
   }
@@ -199,7 +199,7 @@ const NewTask = () => {
       <label htmlFor="task-title">title</label>
       <div className={styles.title}>
         <input
-          placeholder="e.g.Take coffee break"
+          placeholder={formData.titleIsValid?'e.g.Take coffee break':''}
           type="text"
           onChange={handleChange}
           name="title"

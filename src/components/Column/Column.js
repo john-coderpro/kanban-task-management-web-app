@@ -19,7 +19,7 @@ const Column = ({ columnInfos, color }) => {
       items={columnInfos.tasks}
       strategy={verticalListSortingStrategy}
     >
-      <div
+      <section
         className={columnInfos.tasks.length ? styles.column : `${styles['column-empty']} ${styles.column}`}
         data-testid="column"
         ref={setNodeRef}
@@ -39,7 +39,7 @@ const Column = ({ columnInfos, color }) => {
             <Task taskInfo={task} key={task.id} index={index} />
           ))}
         </ul>
-      </div>
+      </section>
     </SortableContext>
   )
 }

@@ -1,3 +1,4 @@
+@use '../../mixin' as *;
 .edit-tooltip-task, .edit-tooltip-board {
   position: absolute;
   background-color: var(--secondary-bg);
@@ -21,7 +22,11 @@
 }
 .edit-tooltip-task {
   top: 60px;
-  right: -96px;
+  right: -25px;
+  @include media(medium) {
+    right: -86px;
+  }
+  
 }
 .edit-tooltip-board {
   top: 90px;
