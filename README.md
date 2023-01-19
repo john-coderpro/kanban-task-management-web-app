@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/john-coderpro/kanban-task-management-web-app)
-- Live Site URL: [Add live site URL here](https://john-coderpro.github.io/kanban-task-management-web-app/)
+- [my code](https://github.com/john-coderpro/kanban-task-management-web-app)
+-  [live preview](https://john-coderpro.github.io/kanban-task-management-web-app/)
 
 ## My process
 
