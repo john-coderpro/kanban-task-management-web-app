@@ -4,9 +4,6 @@ import { BackdropDataProvider } from '../context/BackdropDataContext'
 import Nav from './Nav'
 import '@testing-library/jest-dom'
 
-// I will write test for buttons inside the nav where they
-// will be rendered because it is where their effect will be
-// noticeable
 
 describe('Nav Component', () => {
   it('Renders buttons for all the available boards', () => {

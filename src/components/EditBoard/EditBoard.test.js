@@ -50,9 +50,9 @@ describe('EditBoard Component', () => {
     await userEvent.type(textInputs[4], 'Done')
     await userEvent.click(submitBtn)
     expect(screen.getByTestId('board-name-error')).toHaveTextContent(
-      'name already used'
+      'used'
     )
-    expect(screen.getByText('used')).toBeInTheDocument()
+    expect(screen.getAllByText('used').length).toBe(2)
     expect(screen.getByText('can\'t be empty')).toBeInTheDocument()
     await userEvent.clear(textInputs[0])
     await userEvent.click(submitBtn)

@@ -42,6 +42,7 @@ function Task({taskInfo, index, overlayStyle=null}) {
     <li 
       {...attributes}
       {...listeners}
+      role='listitem'
       ref={setNodeRef}
       style={style}
       onClick={displayTaskInfo} 
