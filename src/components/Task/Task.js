@@ -42,14 +42,14 @@ function Task({taskInfo, index, overlayStyle=null}) {
     <li 
       {...attributes}
       {...listeners}
-      role='listitem'
+      role={null}
       ref={setNodeRef}
       style={style}
       onClick={displayTaskInfo} 
       onKeyUp={(e) => {if(e.key === 'a' || e.key === 'A' ) {displayTaskInfo(e)}}}
       className={styles.task}
     >
-      <h3 className={styles.title}>{taskInfo.title}</h3>
+      <h2 className={styles.title}>{taskInfo.title}</h2>
       <span>{`${numberOfCompletedSubtasks} of ${taskInfo.subtasks.length} subtasks`}</span>
       <button
         className={styles['visually-hidden']}
